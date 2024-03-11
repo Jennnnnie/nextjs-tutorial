@@ -17,17 +17,17 @@ const UsersPage = async () => {
 
   return (
     <>
-      <h1>Users</h1>
-      <p>{new Date().toLocaleTimeString()}</p>{' '}
+      <h1 className='text-white'>Users</h1>
+      <p className='text-white'>{new Date().toLocaleTimeString()}</p>{' '}
       {/* Dynamic Rendering only on build time, when it gets to a website it switches to Static Rendering */}
-      <table className='table table-bordered'>
+      <table className='table table-bordered text-white'>
         <thead>
           <tr>
             <th>Name</th>
             <th>Email</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody className='text-white'>
           {users.map((user) => (
             <tr key={user.id}>
               <th>{user.name}</th>

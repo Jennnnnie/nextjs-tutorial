@@ -5,8 +5,11 @@ import ProductCard from './components/ProductCard';
 export default function Home() {
   return (
     <main>
-      <h1>Hello World</h1>
-      <Link href='/users'>Users</Link> {/* blindside navigation */}
+      <h1 className='text-white'>Hello World</h1>
+      <Link href='/users' className='text-white no-underline hover:underline'>
+        Users
+      </Link>{' '}
+      {/* blindside navigation */}
       <ProductCard />
     </main>
   );
